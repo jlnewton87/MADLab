@@ -1,39 +1,147 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 	<html>
 		<head>
 			<style>
 				body{
-					background-image:url('hss_main_bg.png');
+					background-image:url('rsz_hss_main_bg.png');
 					background-repeat:no-repeat;
-				}
-				.iconGrid a{
+					background-size:320px 500px;
+					}
+				.iconGrid1 a{
 					margin:20px 20px 20px 20px;
 				}
-				.iconGrid img{
-					width:150px;
-					height:150px;
+				.iconGrid1 img{
+					width:60px;
+					height:60px;
 				}
-				.iconGrid {
+				.iconGrid1 {
 					position:absolute;
-					left:30px;
-					top:60px;
+					left:10px;
+					top:30px;
+				}
+				.iconGrid2 a{
+					margin:20px 20px 20px 20px;
+				}
+				.iconGrid2 img{
+					width:60px;
+					height:60px;
+				}
+				.iconGrid2 {
+					position:absolute;
+					left:5px;
+					top:140px;
+				}
+				.labelGrid1 {
+					position:absolute;
+					left:25px;
+					top:75px;
+				}
+				.labelGrid1 p{
+					display:inline;
+					position:absolute;
+				}
+				.labelGrid2 {
+					
 				}
 			</style>
 		</head>
 		
 		<body>
-			<div class="iconGrid">
-				<div>
-					<a href="#"><img src="./hss_icons/icon_undergraduate_medium.png"</a>
-					<a href="#"><img src="./hss_icons/icon_graduate_medium.png"</a>
-					<a href="#"><img src="./hss_icons/icon_news_medium.png"</a>
+			<div>
+				<div class="iconGrid1">
+					<a href="#"><img src="./hss_icons/icon_undergraduate_medium.png" /></a>
+					<a href="#"><img src="./hss_icons/icon_graduate_medium.png" /></a>
+					<a href="#"><img src="./hss_icons/icon_news_medium.png" /></a>
 				</div>
-				<div>
-					<a href="#"><img src="./hss_icons/icon_directions_medium.png"</a>
-					<a href="#"><img src="./hss_icons/icon_d2l_medium.png"</a>
-					<a href="#"><img src="./hss_icons/icon_resources_medium.png"</a>
+				<div class="iconGrid2">
+					<a href="#"><img src="./hss_icons/icon_directions_medium.png" /></a>
+					<a href="#"><img src="./hss_icons/icon_d2l_medium.png" /></a>
+					<a href="#"><img src="./hss_icons/icon_resources_medium.png" /></a>
+				</div>
+				<div class="labelGrid1">
+					<p>Undergrad</p>
+					<p style="left:110px;">Graduate</p>
+					<p style="left:225px;">News</p>
+				</div>
+				<div class="labelGrid2">
 				</div>
 			</div>
-			
+		</body>
+	</html> -->
+	
+	<!DOCTYPE html>
+	<html>
+		<head>
+		<title>Humanities Index Page</title>
+			<style>
+				body{
+					background-image:url('rsz_hss_main_bg.png');
+					background-repeat:no-repeat;
+					background-size:320px 500px;
+				}
+				
+				.iconGrid a{
+					text-decoration:none;
+					color:#000;
+				}
+				.iconGrid {
+					
+					margin-left:10px;
+					width:250px;
+					height:160px;
+					float:left;
+				}
+				.iconsdiv{
+					
+					width:100px;
+					height:75px;
+					float:left;
+					padding-top:10px;
+					padding-right:25px;
+					
+					text-align:center;
+					font-size:13px;
+					font-family:Arial;
+					
+					position:relative;
+					left:25px;
+					top:-8px;
+				}
+				.iconsdiv img {
+					width:50px;
+					height:50px;
+				}
+		
+			</style>
+		</head>
+
+		<body>
+			<div class="iconGrid">
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_undergraduate_medium.png"</a><br />
+					Undergraduate
+				</div>
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_graduate_medium.png"</a><br />
+					Graduate
+				</div>
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_news_medium.png"</a><br />
+					News & Updates
+				</div>
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_directions_medium.png"</a><br />
+					Maps
+				</div>
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_d2l_medium.png"</a><br />
+					D2L
+				</div>
+				<div class="iconsdiv">
+					<a href="#"><img src="hss_icons/icon_resources_medium.png"</a><br />
+					Resources
+				</div>
+			</div>
+
 		</body>
 	</html> 
