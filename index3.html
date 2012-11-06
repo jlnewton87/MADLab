@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Undergraduate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<style>
+		.backgroundPic {
+			width: 100%;
+			height:auto;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+
+		.ui-page {
+			 <!--background: transparent url("images/hss_main_bg.png") no-repeat center center;-->
+			-webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		
+		.wrapper {
+			border: 1px dotted red;
+			width:100%;
+		}
+		table {
+			text-align:center;
+		}
+		table h4{
+			text-decoration:none;
+			font-size:15px;
+			font-weight:bold;
+		}
+		table img{
+			width:30%;
+		}
+		
+
+	
+	</style>
+</head>
+
+<body>
+<div data-role="page">
+	<!--<div data-role="header" data-theme="c">
+		
+	</div><!--/header-->
+	<div data-role="content">
+		
+		<div class="wrapper">
+			<table align="center" cellspacing="0" cellpadding="10%" border="1">
+				<tr>
+					<td><a href="undergraduate2.html" data-transition="slide"><img src="images/icon_undergraduate_medium.png"/></a>
+					<!--<br /><p>undergraduate</p>-->
+					</td>
+					<td><a href="#"><img src="images/icon_graduate_medium.png"/></a>
+					<!--<br /><p>Graduate</p>-->
+					</td>
+				</tr>
+				<tr>
+					<td><a href="#"><img src="images/icon_news_medium.png"/></a></td>
+					<td><a href="#"><img src="images/icon_directions_medium.png"/></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"><img src="images/icon_d2l_medium.png"/></a></td>
+					<td><a href="#"><img src="images/icon_resources_medium.png"/></a></td>
+				</tr>
+			</table>
+		</div><!--wrapper-->
+	<img src="images/hss_main_bg.png" class="backgroundPic"/>
+	</div><!--/content-->
+	<div data-role="footer" data-theme="d">
+		<h1>footer</h1>
+	</div><!--footer-->
+</div><!--/page-->
+</body>
+
+</html>
