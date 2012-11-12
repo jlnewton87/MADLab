@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Certificates</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.js"></script>
+	<style>
+		.ui-page { -webkit-backface-visibility: hidden;
+			background:transparent;
+		}
+		.backgroundPic {
+			width: 100%;
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div data-role="page" data-transition="slide">
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<a href="undergraduate.html" data-icon="back" class="ui-btn-left" data-transition="flip">back</a>
+		<h1 style="color:#C90;">Undergraduate</h1><p><h3 style="color:#FFF;">Certificates</h3></p>
+		<a href="index.html" data-icon="home" class="ui-btn-right" data-transition="flip">Home</a>
+	</div><!--/header-->
+	<div data-role="content">
+		
+		<ul data-role="listview" data-inset="true" data-filter="false" align="center">
+			<li><a href="info.html" data-transition="turn"><img src="images/us.png" alt="United States" class="ui-li-icon" />
+			Certificate in PH<span class="ui-li-count">7</span></a></li>
+			<li><a href="info.html" data-transition="turn"><img src="images/france.png" alt="france" class="ui-li-icon" />
+			Certificate in EUS<span class="ui-li-count">5</span></a></li>
+			<li><a href="info.html" data-transition="turn"><img src="images/finland.png" alt="finland" class="ui-li-icon" />
+			Certificate in PP<span class="ui-li-count">2</span></a></li>
+			<li><a href="info.html" data-transition="turn"><img src="images/germany.png" alt="Germany" class="ui-li-icon" />
+			Certificate in ADR<span class="ui-li-count">4</span></a></li>
+			<li><a href="info.html" data-transition="turn"><img src="images/england.png" alt="Great Britain" class="ui-li-icon" />
+			Certificate in G.L.S<span class="ui-li-count">5</span></a><li>	
+		</ul>
+		<img src="images/background.png" class="backgroundPic"/>
+	</div><!--/content-->
+		
+</div><!--/page-->
+</body>
+
+</html>
