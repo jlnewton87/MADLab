@@ -9417,7 +9417,7 @@ $( document ).bind( "pagecreate create", function( e ) {
 			$window.trigger( "pagecontainercreate" );
 
 			// cue page loading message
-			$.mobile.showPageLoadingMsg();
+			$.mobile.showPageLoadingMsg("e","humanities",false);
 
 			//remove initial build class (only present on first pageshow)
 			hideRenderingClass();

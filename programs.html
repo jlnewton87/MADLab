@@ -12,7 +12,7 @@
 		}
 		.backgroundPic {
 			width: 100%;
-			height:auto;
+			height:100%;
 			top: 0px;
 			left: 0px;
 			z-index: -1;
@@ -24,34 +24,30 @@
 <body>
 <div data-role="page" data-transition="slide">
 	<div data-role="header" data-position="fixed" data-theme="a">
-		<a href="undergraduate.html" data-icon="back" class="ui-btn-left" data-transition="slide">back</a>
+		<a href="undergraduate.html" data-icon="back" class="ui-btn-left" data-transition="flip">back</a>
 		<h1 style="color:#C90;">Undergraduate</h1><p><h3 style="color:#FFF;">Programs</h3></p>
-		<a href="index.html" data-icon="home" class="ui-btn-right" data-transition="slide">Home</a>
+		<a href="index.html" data-icon="home" class="ui-btn-right" data-transition="flip">Home</a>
 	</div><!--/header-->
 	<div data-role="content">
 		
-		<ul data-role="listview" data-inset="true" data-filter="false" data-theme="e" align="center">
-			<li><a href="info.html" data-transition="pop">Program one</a></li>
-			<li><a href="#">Program two</a></li>
-			<li><a href="#">Program three</a></li>
-			<li><a href="#">Program four</a></li>
-			<li><a href="#">Program five</a></li>
-			<li><a href="#">Program six</a></li>
-			<li><a href="#">Program seven</a></li>
-			<li><a href="#">Program eight</a></li>
-			<li><a href="#">Program nine</a></li>
-			<li><a href="#">Program ten</a></li>
-			<li><a href="#">Program eleven</a></li>
-			<li><a href="#">Program twelve</a></li>
-			<li><a href="#">Program thirteen</a></li>
+		<ul data-role="listview" data-inset="true" data-filter="false" align="center">
+			<li><a href="info.html" data-transition="fade">Program one</a></li>
+			<li><a href="info.html" data-transition="pop">Program two</a></li>
+			<li><a href="info.html" data-transition="flip">Program three</a></li>
+			<li><a href="info.html" data-transition="turn">Program four</a></li>
+			<li><a href="info.html" data-transition="flow">Program five</a></li>
+			<li><a href="info.html" data-transition="slidefade">Program six</a></li>
+			<li><a href="info.html" data-transition="slide">Program seven</a></li>
+			<li><a href="info.html" data-transition="slideup">Program eight</a></li>
+			<li><a href="info.html" data-transition="slidedown">Program nine</a></li>
+			<li><a href="info.html" data-transition="pop">Program ten</a></li>
+			<li><a href="info.html" data-transition="pop">Program eleven</a></li>
+			<li><a href="info.html" data-transition="pop">Program twelve</a></li>
+			<li><a href="info.html" data-transition="pop">Program thirteen</a></li>
 		</ul>
-		<img src="images/hss_main_bg.png" class="backgroundPic"/>
+		<img src="images/background.png" class="backgroundPic"/>
 	</div><!--/content-->
 		
-	<div data-role="footer" data-theme="d" data-position="fixed">
-		<h1>footer</h1>
-	</div><!--footer-->
 </div><!--/page-->
 </body>
-
 </html>
