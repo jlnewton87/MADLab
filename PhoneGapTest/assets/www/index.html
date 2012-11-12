@@ -7,6 +7,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile.js"></script>
 	<style>
+		
 		.backgroundPic {
 			width: 100%;
 			height:100%;
@@ -19,14 +20,6 @@
 		.ui-page {
 			-webkit-backface-visibility: hidden;
 			background:transparent;
-		}
-		
-		table {
-			width:100%;
-			height:100%;
-			text-align:center;
-			color:#000;
-			font-weight:bold;
 		}
 		
 		a{
@@ -47,8 +40,6 @@
 			font-family: Arial;
 			font-size:80%;
 		}
-	
-	
 	</style>
 </head>
 
@@ -59,10 +50,10 @@
 	</div><!--/header-->
 	<div data-role="content" id="content">
 		<div class="icons">
-			<a href="undergraduate.html" data-transition="slide"><img src="images/icon_undergraduate_medium.png"/></a><br />Undergraduate
+			<a href="undergraduate.html" data-transition="flip"><img src="images/icon_undergraduate_medium.png"/></a><br />Undergraduate
 		</div>
 		<div class="icons">
-			<a href="graduate.html"><img src="images/icon_graduate_medium.png"/></a><br />Graduate
+			<a href="graduate.html" data-transition="flip"><img src="images/icon_graduate_medium.png"/></a><br />Graduate
 		</div>
 		<div class="icons">
 			<a href="#"><img src="images/icon_news_medium.png"/></a><br />News & Events
@@ -80,5 +71,4 @@
 	<img src="images/hss_main_bg.png" class="backgroundPic"/>
 </div><!--/page-->
 </body>
-
 </html>
