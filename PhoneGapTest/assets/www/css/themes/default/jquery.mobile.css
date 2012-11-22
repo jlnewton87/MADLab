@@ -783,7 +783,7 @@
 	background: 			rgba(250,219,78,.9) /*{e-bup-background-color}*/;
 	font-weight: bold;
 	color: 					#222 /*{e-bup-color}*/;
-	text-shadow: 0 /*{e-bup-shadow-x}*/ 1px /*{e-bup-shadow-y}*/ 0 /*{e-bup-shadow-radius}*/ 	#fff /*{e-bup-shadow-color}*/;
+	text-shadow: 1px /*{e-bup-shadow-x}*/ 1px /*{e-bup-shadow-y}*/ 0 /*{e-bup-shadow-radius}*/ 	#fff /*{e-bup-shadow-color}*/;
 
 }
 .ui-btn-up-g:visited,
