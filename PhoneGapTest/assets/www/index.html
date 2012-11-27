@@ -56,5 +56,14 @@
 	</div><!--/content-->
 	<img src="images/hss_main_bg.png" class="backgroundPic"/>
 </div><!--/page-->
+	<script type="text/javascript">
+		$(document).delegate('.ui-navbar ul li> a', 'click', function(){
+			$(this).closest('.ui-navbar').find('a').removeClass('ui-navbar-btn-active');
+			//$('.ui-navbar ul li > a').removeClass('ui-navbar-btn-active');
+			$(this).addClass('ui-navbar-btn-active');
+			//$('.content_div').hide();
+			$('#' + $(this).attr('data-href')).show().siblings('.content_div').hide();
+		});
+	</script>
 </body>
 </html>
