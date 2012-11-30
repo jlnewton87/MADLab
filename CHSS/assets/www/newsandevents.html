@@ -11,49 +11,44 @@
 			background:transparent;
 		}
 		.backgroundPic {
-			width: 100%;
-			height:100%;
-			top: 0px;
-			left: 0px;
-			z-index: -1;
-			position: absolute;
+			width: 100%; height:100%; top: 0px; left: 0px; z-index: -1; position: absolute;
 		}
-
 	</style>
 </head>
-
 <body>
-<div data-role="page">
-	<div data-role="header" data-theme="a" data-position="fixed">
-		<a href="index.html" data-icon="back" class="ui-btn-left" data-theme="e" data-transition="flip">Back</a>
-		<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">News & Events</h3></p>
-		<a href="index.html" data-icon="home" class="ui-btn-right" data-theme="e" data-transition="flip">Home</a>
-	</div><!--/header-->
-	<div data-role="content">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="javascript:;" data-href="a" class="ui-navbar-btn-active">News</a></li>
-				<li><a href="javascript:;" data-href="b">Events</a></li>
-			</ul>
-			<div id="a" class="content_div" style="display:none; background:#faf7f0; padding-top:20px;">
-				Content for News
-			</div><!--/contentNews-->
-			<div id="b" class="content_div" style="display:none; background:#faf7f0; padding-top:20px;">
-				Content For Events
-			</div><!--contentEvents-->
-		</div><!--/navbar-->
-		<img src="images/background.png" class="backgroundPic"/>
-	</div><!--/content-->
+	<div data-role="page" data-theme="e">
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<a href="index.html" data-icon="back" class="ui-btn-left" data-theme="e" data-transition="flip">Back</a>
+			<h1 style="color:#C90;">CHSS</h1><p><h3 style="color:#FFF;">News & Events</h3></p>
+			<a href="index.html" data-icon="home" class="ui-btn-right" data-theme="e" data-transition="flip">Home</a>
+		</div><!--/header-->
+		<div class="boxshadow">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="javascript:;" data-href="a" class="ui-btn-active">News</a></li>
+					<li><a href="javascript:;" data-href="b">Events</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			
+			<div id="a" class="content_div" style="display:block; background:$colore8e5dc; padding:20px 10px;">
+				Content for the news
+			</div>
+			
+			<div id="b" class="content_div" style="display:none; background:$colore8e5dc; padding:20px 10px;">
+				Content for the events
+			</div>
+		
+		</div><!--BoxShadowDiv-->
+			<script type="text/javascript">
+				$(document).delegate('.ui-navbar ul li> a', 'click', function(){
+					$(this).closest('.ui-navbar').find('a').removeClass('ui-btn-active');
+					$(this).addClass('ui-btn-active');
+					$('#' + $(this).attr('data-href')).show().siblings('.content_div').hide();
+				});
+			</script>
 	
-</div><!--/page-->
-	<script type="text/javascript">
-		$(document).delegate('.ui-navbar ul li> a', 'click', function(){
-			$(this).closest('.ui-navbar').find('a').removeClass('ui-navbar-btn-active');
-			//$('.ui-navbar ul li > a').removeClass('ui-navbar-btn-active');
-			$(this).addClass('ui-navbar-btn-active');
-			//$('.content_div').hide();
-			$('#' + $(this).attr('data-href')).show().siblings('.content_div').hide();
-		});
-	</script>
+	</div><!--/page-->	
 </body>
+
 </html>
